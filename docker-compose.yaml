@@ -1,0 +1,17 @@
+services:
+  torch_api:
+    build: ./ML
+    container_name: torch_api
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload --reload-include *
+    ports:
+      - 8000:8000
+    volumes:
+      - ./Ml:/app
+  frontend:
+    build: ./FrontEnd
+    container_name: streamlit_app
+    command: streamlit run app.py --server.port 8080
+    ports:
+      - 8080:8080
+    volumes:
+      - ./FrontEnd:/app
