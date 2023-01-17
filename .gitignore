@@ -133,7 +133,7 @@ dmypy.json
 *.pt
 
 #Redis backup 
-Redis/dump.rdb
+*.rdb
 
 #Cache img
 cache.jpg
