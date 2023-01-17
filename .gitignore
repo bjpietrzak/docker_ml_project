@@ -131,3 +131,11 @@ dmypy.json
 
 #ML models
 *.pt
+
+#Redis backup 
+dump.rdb
+
+#Cache img
+cache.jpg
+
+FrontEnd/storage
