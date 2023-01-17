@@ -11,7 +11,7 @@ from .utils.recognition_model import model
 router = APIRouter(prefix="/inference-service",
                    tags=["Inference Operations"])
 
-@router.post("/detect/", response_model=DetectionResponse)
+@router.post("/detect", response_model=DetectionResponse)
 async def detect(request: DetectionRequest = Depends()):
     img = await(create_task(decode_frames(encoded_img=request.Image)))
     boxes = model(img)[0].cpu().detach().numpy().tolist()

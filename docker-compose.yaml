@@ -7,11 +7,18 @@ services:
       - 8000:8000
     volumes:
       - ./Ml:/app
-  frontend:
+  front_back_end:
     build: ./FrontEnd
     container_name: streamlit_app
-    command: streamlit run app.py --server.port 8080
+    command: streamlit run app.py --server.port 8001 --server.address 0.0.0.0
     ports:
-      - 8080:8080
+      - 8001:8001
     volumes:
       - ./FrontEnd:/app
+  redis:
+    build: ./Redis
+    container_name: redis_container
+    ports:
+      - 6379:6379
+    volumes:
+      - ./Redis:/data

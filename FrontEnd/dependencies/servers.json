@@ -1,4 +1,5 @@
 {
-    "inference_server": "http://0.0.0.0:8000/inference-service/detect",
-    "database_server": "nothing"
+    "inference_server": "http://torch_api:8000/inference-service/detect",
+    "database_server": {"address":"redis",
+                        "port":6379}
 }

@@ -1,5 +1,12 @@
 import cv2
 import numpy as np
+import datetime
+
+
+def get_name() -> str:
+    todays_date = datetime.datetime.now()
+    name = todays_date.strftime("%f_%S_%M_%H_%d_%m_%Y") + ".jpg"
+    return name
 
 def test_device() -> bool:
     cap = cv2.VideoCapture(0)
