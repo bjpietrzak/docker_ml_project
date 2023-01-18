@@ -40,7 +40,7 @@ App will be avalible on [0.0.0.0:8001](http://0.0.0.0:8001)
 
 - While the docker containers are running, you may enter command:
 ```console
-docker-compose exec front_back_end python get_data.py
+docker-compose exec web_app python get_data.py
 ```
 It will retrive all data from the database, write into dump.json in FrontEnd folder.
 
