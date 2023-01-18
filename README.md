@@ -1,6 +1,6 @@
 # Docker ML Project
 
-This is a image detection service, that allows user to quickly analyze images for the presence of people and heads.  [Deepakcrk's](https://github.com/deepakcrk/yolov5-crowdhuman) model runs inference on passed image and returns bounding boxes for any detected individuals or heads. These bounding boxes will be drawn on the image and displayed on app's website. The processed image will also be saved locally. Its name and bounding box data will be stored in a Redis database for easy retrieval later on
+This is a image detection service, that allows user to quickly analyze images for the presence of people and heads.  [Deepakcrk's](https://github.com/deepakcrk/yolov5-crowdhuman) model runs inference on passed image and returns bounding boxes for any detected individuals or heads. These bounding boxes will be drawn on the image and displayed on app's website. The processed image will also be saved locally. Its name and bounding box data will be stored in a Redis database for later retrieval. 
 ## Getting Started
 
 In order to get started you need to have couple of things installed on your machine.
