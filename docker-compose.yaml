@@ -6,7 +6,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./Ml:/app
+      - ./ML:/app
   front_back_end:
     build: ./FrontEnd
     container_name: streamlit_app
