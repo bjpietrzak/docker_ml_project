@@ -36,7 +36,7 @@ docker-compose build
 ```console
 docker-compose up
 ```
-App will be avalible on [0.0.0.0:8001](0.0.0.0:8001)
+App will be avalible on [0.0.0.0:8001](http://0.0.0.0:8001)
 
 - While the docker containers are running, you may enter command:
 ```console
