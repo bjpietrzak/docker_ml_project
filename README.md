@@ -1,10 +1,5 @@
 # Docker ML Project
 
-This is a simple project of a dockerised application, that contains Frontend/Backend database and inference servers – all run via docker-compose. It's a souly practitionary project, to understand how to create dockerised apps.
-
-It's a website service, that runs inference on passed images in order to detect if a person (or people) and heads that are present on the picture. Afterwards if detector model retuns bounding boxes, of classes, they are drawn on passed image and displayed on apps website. Then passed image is saved locally, and it's name as a key is passed alongside with bounding boxes - as a value - to the redis database.
-
-
 This is a image detection service, that allows user to quickly analyze images for the presence of people and heads.  [Deepakcrk's](https://github.com/deepakcrk/yolov5-crowdhuman) model runs inference on passed image and returns bounding boxes for any detected individuals or heads. These bounding boxes will be drawn on the image and displayed on app's website. The processed image will also be saved locally. its name and bounding box data will be stored in a Redis database for easy retrieval later on
 ## Getting Started
 
