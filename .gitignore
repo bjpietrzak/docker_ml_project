@@ -139,3 +139,6 @@ dmypy.json
 cache.jpg
 
 FrontEnd/storage
+
+#MAC stuff
+.DS_Store
