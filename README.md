@@ -1,9 +1,9 @@
 # Docker ML Project
 
-This is a image detection service, that allows user to quickly analyze images for the presence of people and heads.  [Deepakcrk's](https://github.com/deepakcrk/yolov5-crowdhuman) model runs inference on passed image and returns bounding boxes for any detected individuals or heads. These bounding boxes will be drawn on the image and displayed on app's website. The processed image will also be saved locally. Its name and bounding box data will be stored in a Redis database for later retrieval. 
+This is an image detection service, that allows users to quickly analyze images for the presence of humans.  [Deepakcrk's](https://github.com/deepakcrk/yolov5-crowdhuman) model runs inference on passed images and returns bounding boxes for any detected individuals or their heads. These bounding boxes will be drawn on the image and displayed on the app's website. The processed image will also be saved locally. Its name and bounding box data will be stored in a Redis database for later retrieval. 
 ## Getting Started
 
-In order to get started you need to have couple of things installed on your machine.
+In order to get started you need to have a couple of things installed on your machine.
 
 ### Prerequisites
 
@@ -26,25 +26,25 @@ cd docker_ml_project
 mv /path/to/ML/Model.pt ML/recognition_routers/utils/
 ```
 
-3. Build docker image:
+3. Build a docker image:
 ```console
 docker-compose build
 ```
 
-### Running and avalible commands
+### Running and available commands
 - To run the application enter this command:
 ```console
 docker-compose up
 ```
-App will be avalible on [0.0.0.0:8001](http://0.0.0.0:8001)
+The app will be available on [0.0.0.0:8001](http://0.0.0.0:8001)
 
-- While the docker containers are running, you may enter command:
+- While the docker containers are running, you may enter the command:
 ```console
 docker-compose exec web_app python get_data.py
 ```
-It will retrive all data from the database, write into dump.json in FrontEnd folder.
+It will retrieve all data from the database, and write it into dump.json in the FrontEnd folder.
 
-### Shuting down
+### Shutting down
 To shut down this application simply use this command:
 ```console
 docker-compose stop
